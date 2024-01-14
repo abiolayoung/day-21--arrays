@@ -63,7 +63,7 @@ fruits.unshift("pear", "lemom", "grape") // unshift will add to the first of the
 // the shift and unshift method move the array elements to either left or right , but pop and push only remove and add to the end of the array and not move their index
 
 // how to loop over the indexes of an array
-let arr = ["apple", "orange", "plum"];
+// let arr = ["apple", "orange", "plum"];
 
 // for(let i=0; i<arr.length; i++){
 //     alert(arr[i])
@@ -75,15 +75,58 @@ let arr = ["apple", "orange", "plum"];
 // }
 
 // using for in loop - used for generic objects
-for(let key in arr){
-    alert(arr[key])
-}
+// for(let key in arr){
+//     alert(arr[key])
+// }
 
-let matrix = [
-    [1,2,3], [4,5,6], [7,8,9]
-]
-alert(matrix[3][1])
+// let matrix = [
+//     [1,2,3], [4,5,6], [7,8,9]
+// ]
+// alert(matrix[3][1])
 
+// Array methods
+// splice method
+// let arr = [1,2,3];
+// delete arr[2]
+// alert(arr[2]) // this will say undefined because the element has been delected
+// the delete keyword only delete an element from the array but does not shift unneeded space
+// alert(arr.length) // this will output 3 becuase it is a delect keyword that is used to remove index 2
+
+// arr.splice method can do everything in arrays, it can add, remove, replace elements from the array
+// synthas Array.splice(start[, deleteCount, elem1,...,elemN])
+// IT Modify the arr starting from the index "start", it remove the delect count element
+// and then insert element number1 and element N, and finally return the array of remove element
+// let arr = ["I", "study", "javascript", "right", "now"];
+// arr.splice(1,1)  // this will remove 1 element starting from the index 1 which is "study"
+// alert(arr)
+
+// removing multiple element and replacing them
+// let removedElem = arr.splice(0,3,"lets", "play")
+// alert(removedElem) // this will remove 3 values from the array, starting from the index 0 and replace then with lets play
+
+// inserting without removal using slice
+
+// arr.splice(5,0,"donsalvy", "myGuy")
+// alert(arr)
+
+// negative indexes are not allowed in splice method
+
+// USING SLICE method
+
+// Array.slice([start],[end])
+// let arr = ["t", "e", "s", "t"]
+// alert(arr.slice(1,3)) //this will copy from index 1 and 3 which is e,s
+// alert(arr.slice(-2)) // this will alert 2 items from the end of the array
+
+// USING CONCAT method- used to add to the end of the array
+// Array.concat(a1,a2\\\\)
+
+let arr = [1,2,3]
+alert(arr.concat([4,5]))
+
+// SEARCHING INSIDE OF AN ARRAY USING INDEX OF, LAST INDEX OF AND INCLUDES METHOD
+alert(arr.indexOf(3))
+ 
 
 
 
